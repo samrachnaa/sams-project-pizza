@@ -3,7 +3,7 @@
 // Step 1 - Welcome and introduction
 // Your code goes here
 alert(
-  `Welcome to our Sami's Pizzeria, let me know when you're ready to order!`
+  `Welcome to Sami's Pizzeria, let me know when you're ready to order!`
 )
 
 const customerName = prompt(
@@ -46,9 +46,9 @@ switch (customerOrder){
  case "Pizza":
   chosenTopping = prompt(
     `Please pick a number from one of our toppings!
-    1 - Anchovies 
-    2 - Mushrooms
-    3 - Four cheese
+    1 - Anchovies Pizza
+    2 - Mushrooms Pizza
+    3 - Four cheese Pizza
     Please enter the number of your choice`
     );
     toppingType=["Anchovies", "Mushrooms", "Four cheese"]
@@ -59,7 +59,7 @@ switch (customerOrder){
         1 - Pasta Carbonara 
         2 - Pasta Tortellini
         3 - Pasta Arrabiata
-        Please enter the number of your choice`
+        `
         );
         toppingType=["Pasta Carbonara", "Pasta Tortellini", "Pasta Arrabiata"]
         break;
@@ -69,7 +69,7 @@ switch (customerOrder){
             1 - Caesar Salad
             2 - Quinoa Salad
             3 - Marinated Tofu Salad
-            Please enter the number of your choice`
+            `
             );
             toppingType=["Caesar Salad", "Quinoa Salad", "Marinated Tofu Salad"]
             break;
