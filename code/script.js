@@ -92,8 +92,36 @@ if (chosenTopping === "1") {
   );
 }
 
+alert(`Sweet, that you chose to have ${customerOrder} today!`);
 // Step 4 - Age
-// Your code goes here
+
+const ageInput = prompt(
+  `Is this oder for an adult or a child? Please enter your age.`
+);
+
+if (ageInput <= 18) {
+  alert("The order is for a child, please pay $10");
+} else if (ageInput > 18) {
+  alert("The order is for a adult, please pay $15");
+}
+else {
+  alert("Sorry, your order choice is invalid. Please enter a valid age");
+}
 
 // Step 5 - Order confirmation
-// Your code goes here
+const confirmOrder = prompt(
+  `Perfect! one ${customerOrder} will be prepared today. Do you want to confirm your order?
+  1 - Yes
+  2- No
+  `
+);
+
+if(confirmOrder === "1"){
+  alert("Perfect! You will receive your order shortly. Please refesh the page if you want to order more from us.");
+}
+else {
+  alert("No worries, we understand. Please come back to us later when you are ready.");
+}
+
+
+
